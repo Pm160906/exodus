@@ -55,7 +55,7 @@ function JudgementChamber() {
   }, 1800);
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/judge/judge", {
+    const res = await fetch("https://exodus-backend-qdky.onrender.com/archive/judge/judge", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: inputText })

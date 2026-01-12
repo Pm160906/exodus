@@ -20,21 +20,21 @@ function ArchiveWing() {
   const [phases, setPhases] = useState({});
 
 useEffect(() => {
-  fetch("http://127.0.0.1:8000/archive/parallels")
+  fetch("https://exodus-backend-qdky.onrender.com/archive/parallels")
     .then(res => res.json())
     .then(data => {
       console.log("PARALLELS:", data);
       setParallels(data);
     });
 
-  fetch("http://127.0.0.1:8000/archive/lifecycles")
+  fetch("https://exodus-backend-qdky.onrender.com/archive/lifecycles")
     .then(res => res.json())
     .then(data => {
       console.log("LIFECYCLES:", data);
       setLifecycles(data);
     });
 
-  fetch("http://127.0.0.1:8000/archive/phases")
+  fetch("https://exodus-backend-qdky.onrender.com/archive/phases")
     .then(res => res.json())
     .then(data => {
       console.log("PHASES:", data);
