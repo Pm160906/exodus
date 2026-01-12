@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="min-h-screen text-bone font-serif">
       <Routes>
-        <Route path="/" element={<LibraryHall />} />
-        <Route path="/archives" element={<ArchiveWing />} />
-        <Route path="/judgement" element={<JudgementChamber />} />
+        <Route index element={<LibraryHall />} />
+        <Route path="archives" element={<ArchiveWing />} />
+        <Route path="judgement" element={<JudgementChamber />} />
       </Routes>
     </div>
   );
