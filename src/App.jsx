@@ -5,11 +5,11 @@ import JudgementChamber from "./scenes/JudgementChamber";
 
 function App() {
   return (
-    <div className="min-h-screen text-bone font-serif">
+    <div className="min-h-screen text-[#e6d3a3] font-serif">
       <Routes>
-        <Route index element={<LibraryHall />} />
-        <Route path="archives" element={<ArchiveWing />} />
-        <Route path="judgement" element={<JudgementChamber />} />
+        <Route path="/" element={<LibraryHall />} />
+        <Route path="/archives" element={<ArchiveWing />} />
+        <Route path="/judgement" element={<JudgementChamber />} />
       </Routes>
     </div>
   );
